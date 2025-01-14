@@ -111,7 +111,6 @@ export const Home = () => {
 
     // Logic to handle the filter
     const filterFunction = (e) => {
-        console.log(e.target.name);
         if (e.target.name == "genre") {
             setFilter({ ...filter, genre: e.target.value });
         }
@@ -147,7 +146,7 @@ export const Home = () => {
                 <div className="dropdownBox">
                     <div className="filter">
                         <p className="dropText">Select genre</p>
-                        <select name="genre" onChange={(e) => filterFunction(e)}>
+                        <select name="genre" value={filter.genre} onChange={(e) => filterFunction(e)}>
                             <option value="Action">Action</option>
                             <option value="Comedy">Comedy</option>
                             <option value="Drama">Drama</option>
@@ -158,7 +157,7 @@ export const Home = () => {
 
                     <div className="filter">
                         <p className="dropText">Select duration</p>
-                        <select name="duration" onChange={(e) => filterFunction(e)}>
+                        <select name="duration" value={filter.duration} onChange={(e) => filterFunction(e)}>
                             <option value="short">Short</option>
                             <option value="medium">Medium</option>
                             <option value="long">Long</option>
@@ -167,7 +166,7 @@ export const Home = () => {
 
                     <div className="filter">
                         <p className="dropText">Select mood</p>
-                        <select name="mood" onChange={(e) => filterFunction(e)}>
+                        <select name="mood" value={filter.mood} onChange={(e) => filterFunction(e)}>
                             <option value="Happy">Happy</option>
                             <option value="Excited">Excited</option>
                             <option value="Relaxed">Relaxed</option>
