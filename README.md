@@ -15,7 +15,7 @@ Clone this Project
 
 `git pull https://github.com/gulashanhashami/movie_task_frontend`
 
-# npm start
+# npm run start
 - Now the project is ready just go and visit home page
 
 - > HOME PAGE
