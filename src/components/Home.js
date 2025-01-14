@@ -184,7 +184,7 @@ export const Home = () => {
                             <div key={item._id} className="card">
                                 <img className="img1" srcSet={item.image} alt="" />
                                 <p>Name: {item.title}</p>
-                                <p>Duration: {item.duration}</p>
+                                <p>Duration: {item.duration}minutes</p>
                                 <p>Genre: {item.genre}</p>
                                 <p>Mood: {item.mood}</p>
                             </div>
