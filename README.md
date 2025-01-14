@@ -21,7 +21,9 @@ Clone this Project
 - > HOME PAGE
 
 ![homepage](./Images/image1.png)
+
 ![homepage](./Images/image2.png)
+
 ![homepage](./Images/image3.png)
 
 
